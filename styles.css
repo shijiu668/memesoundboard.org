@@ -1,0 +1,165 @@
+/* 基本布局 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+/* 设置header容器为flex布局 */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 标题和导航之间分开 */
+}
+
+/* 标题样式 */
+header h1 {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0;
+}
+
+.header-container a {
+    color: inherit;  /* 继承父元素颜色，通常为红色 */
+    text-decoration: none;  /* 去除下划线 */
+}
+
+/* 设置类别导航的样式 */
+.categories {
+    display: flex;
+    gap: 20px;
+}
+
+.categories a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+}
+
+/* 搜索框样式 */
+nav input {
+    padding: 10px;
+    width: 98%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* 修改后的 grid 布局（保证按钮根据屏幕宽度自适应） */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 每列最小宽度 150px，最大自适应 */
+    gap: 20px; /* 按钮之间的间隔 */
+    padding: 0 20px; /* 增加内边距 */
+    margin-top: 30px; /* 增加距离顶部的间距 */
+    margin-bottom: 30px; /* 增加距离底部的间距 */
+}
+
+/* 修改后的 .sound-button，使用 flex 布局使按钮和文字垂直排列 */
+.sound-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* 按钮和文字垂直排列 */
+    align-items: center; /* 居中对齐 */
+    justify-content: center; /* 垂直居中 */
+}
+
+/* 音效按钮下方文字链接样式 */
+.sound-button p {
+    word-wrap: break-word; /* 自动换行 */
+    word-break: break-all; /* 强制换行 */
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 0; /* 添加一些内边距 */
+    max-width: 100%; /* 允许文字自适应容器宽度 */
+    box-sizing: border-box; /* 包括内边距计算在内 */
+}
+
+/* 如果文字特别长，限制按钮的最大宽度 */
+.sound-button p a {
+    display: block; /* 让链接占满整个容器 */
+    max-width: 100%; /* 确保链接不会超出容器 */
+    overflow-wrap: break-word; /* 文字过长时换行 */
+}
+
+.sound-button {
+    text-align: center;
+}
+
+.sound-button button {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.sound-button img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+
+
+
+/* 音效按钮下方文字链接样式 */
+.sound-button p a {
+    color: #247a8c;
+    border: solid 1px #2c89a0;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* 去掉链接的下划线 */
+}
+
+.sound-button p a:hover {
+    background-color: #247a8c;
+    color: white;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+#similar-sounds ul {
+    list-style: none;
+    padding: 0;
+}
+
+#similar-sounds ul li {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: red;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
