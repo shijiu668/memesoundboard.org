@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Listen & share 13 anos. Find more instant sound buttons on memesoundboard!">
-    <meta name="keywords" content="13 anos, Instant Sound Effect Button, sound effects, play audio, MP3 download, share sounds, meme soundboard, audio clips, music effects">
+    <meta name="keywords"
+        content="13 anos, Instant Sound Effect Button, sound effects, play audio, MP3 download, share sounds, meme soundboard, audio clips, music effects">
     <title>13 anos - Instant Sound Effect Button | memesoundboard</title>
     <link rel="stylesheet" href="styles.css">
 
@@ -28,6 +30,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -54,19 +57,288 @@
                 <p><a href="javascript:void(0);" id="copy-link" onclick="copyLink()">Copy-link</a></p>
             </div>
 
+            <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+                <a href="/"><button>view more buttons</button></a>
+            </div>
+
             <section id="popular-sounds">
                 <h2>Popular Sound Effects</h2>
-                <p>Browse our collection of trending sound effects. Click to instantly play any sound, featuring the latest viral and funny audio clips.</p>
+                <p>Browse our collection of trending sound effects. Click to instantly play any sound, featuring the
+                    latest viral and funny audio clips.</p>
+                <style>
+                    .sound-grid {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        gap: 20px;
+                        margin: 0 auto;
+                        max-width: 1200px;
+                    }
+
+                    .sound-button {
+                        margin: 0 10px 20px 10px;
+                        width: 100%;
+                    }
+
+                    .sound-button p {
+                        margin-top: 5px;
+                        text-align: center;
+                    }
+
+                    .glow-ring {
+                        margin: 0 auto;
+                    }
+                </style>
+                <div class="sound-grid">
+                    <!-- 第一行 -->
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/RUN vine.mp3')"></div>
+                        <p><a href="in/RUN vine.html">RUN vine</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/outro song.mp3')"></div>
+                        <p><a href="in/outro song.html">outro song</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/instagram thud.mp3')"></div>
+                        <p><a href="in/instagram thud.html">instagram thud</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/DEJA VU MEME.mp3')"></div>
+                        <p><a href="in/DEJA VU MEME.html">DEJA VU MEME</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/Among Us role reveal sound.mp3')"></div>
+                        <p><a href="in/Among Us role reveal sound.html">Among Us role reveal sound</a></p>
+                    </div>
+
+                    <!-- 第二行 -->
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/Galaxy meme.mp3')"></div>
+                        <p><a href="in/Galaxy meme.html">Galaxy meme</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/spiderman meme song.mp3')"></div>
+                        <p><a href="in/spiderman meme song.html">spiderman meme song</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/what da dog doin.mp3')"></div>
+                        <p><a href="in/what da dog doin.html">what da dog doin</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/WIDE PUTIN MEME.mp3')"></div>
+                        <p><a href="in/WIDE PUTIN MEME.html">WIDE PUTIN MEME</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/baby laughing meme.mp3')"></div>
+                        <p><a href="in/baby laughing meme.html">baby laughing meme</a></p>
+                    </div>
+
+                    <!-- 第三行 -->
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/They ask you how you are meme.mp3')"></div>
+                        <p><a href="in/They ask you how you are meme.html">They ask you how you are meme</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/Punch Sound.mp3')"></div>
+                        <p><a href="in/Punch Sound.html">Punch Sound</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/Directed by Robert B Weide.mp3')"></div>
+                        <p><a href="in/Directed by Robert B Weide.html">Directed by Robert B Weide</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/FBI OPEN UP (with explosion).mp3')"></div>
+                        <p><a href="in/FBI OPEN UP (with explosion).html">FBI OPEN UP (with explosion)</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/Fart Meme Sound (Better and louder).mp3')">
+                        </div>
+                        <p><a href="in/Fart Meme Sound (Better and louder).html">Fart Meme Sound (Better and louder)</a>
+                        </p>
+                    </div>
+
+                    <!-- 第四行 -->
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/WHAT ARE YOU DOING IN MY SWAMP.mp3')"></div>
+                        <p><a href="in/WHAT ARE YOU DOING IN MY SWAMP.html">WHAT ARE YOU DOING IN MY SWAMP</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/Wow Anime meme.mp3')"></div>
+                        <p><a href="in/Wow Anime meme.html">Wow Anime meme</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/Bruh meme.mp3')"></div>
+                        <p><a href="in/Bruh meme.html">Bruh meme</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/French meme song.mp3')"></div>
+                        <p><a href="in/French meme song.html">French meme song</a></p>
+                    </div>
+
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/-999 Social Credit Siren.mp3')"></div>
+                        <p><a href="in/-999 Social Credit Siren.html">-999 Social Credit Siren</a></p>
+                    </div>
+                </div>
             </section>
 
             <section id="similar-sounds">
                 <h2>Similar Sounds</h2>
-                <ul>
-                    <li><a href="sound2.html">Sound 2</a></li>
-                    <!-- More recommendations -->
-                </ul>
+                <div class="sound-grid">
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/borat soundboard.mp3')"></div>
+                        <p><a href="in/borat soundboard.html">borat soundboard</a></p>
+                    </div>
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/lethal company soundboard.mp3')"></div>
+                        <p><a href="in/lethal company soundboard.html">lethal company soundboard</a></p>
+                    </div>
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/darth vader soundboard.mp3')"></div>
+                        <p><a href="in/darth vader soundboard.html">darth vader soundboard</a></p>
+                    </div>
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/phone prank soundboard.mp3')"></div>
+                        <p><a href="in/phone prank soundboard.html">phone prank soundboard</a></p>
+                    </div>
+                    <div class="sound-button">
+                        <div class="glow-ring" onclick="playSound('sound/red light green light soundboard.mp3')"></div>
+                        <p><a href="in/red light green light soundboard.html">red light green light soundboard</a></p>
+                    </div>
+                </div>
             </section>
         </section>
+
+        <style>
+            .info-section {
+                margin: 40px 0;
+                padding: 25px;
+                border-radius: 12px;
+                background: linear-gradient(145deg, #f0f4ff, #e6eeff);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .info-section h2 {
+                color: #3a4f7a;
+                text-align: center;
+                font-size: 28px;
+                margin-bottom: 25px;
+                border-bottom: 2px solid #aebce0;
+                padding-bottom: 10px;
+            }
+
+            .info-section h3 {
+                color: #5d6d8f;
+                font-size: 20px;
+                margin: 20px 0 10px 0;
+                position: relative;
+                padding-left: 15px;
+            }
+
+            .info-section h3:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                background-color: #aebce0;
+                border-radius: 50%;
+            }
+
+            .info-section p {
+                color: #5a5a5a;
+                line-height: 1.6;
+                margin-bottom: 15px;
+                padding-left: 15px;
+            }
+        </style>
+
+        <section id="about-soundboard" class="info-section">
+            <h2>What is Meme Soundboard?</h2>
+            <h3>Your Ultimate Sound Effects Collection</h3>
+            <p>Meme Soundboard is a comprehensive library of instant sound effects buttons designed for content
+                creators, streamers, and meme enthusiasts. With our extensive collection of high-quality audio clips,
+                you can easily find, play, and download the perfect sound effect for any situation.</p>
+
+            <h3>Created for Entertainment</h3>
+            <p>Our platform was developed with entertainment in mind, providing a fun and engaging way to discover and
+                enjoy popular sound effects that have become cultural phenomena across social media and internet
+                communities.</p>
+
+            <h3>Constantly Updated Library</h3>
+            <p>We regularly update our collection with the latest viral sounds, ensuring you always have access to
+                trending audio clips as soon as they gain popularity online.</p>
+
+            <h3>High-Quality Audio</h3>
+            <p>All our sound effects are carefully selected and optimized for clarity and quality, ensuring you get the
+                best possible audio experience every time you click a button.</p>
+        </section>
+
+        <section id="how-to-use" class="info-section">
+            <h2>How to Use Our Sound Buttons</h2>
+            <h3>Simple, Fast, and Fun Audio Experience</h3>
+            <p>Using our sound effect buttons couldn't be easier! Simply browse through our categorized collections,
+                click on any sound button to instantly play the audio, and download MP3 files with a single click if you
+                want to save them for later use.</p>
+
+            <h3>Download for Offline Use</h3>
+            <p>Every sound effect on our platform can be downloaded as an MP3 file, allowing you to use them in your own
+                projects, videos, streams, or just for personal entertainment when offline.</p>
+
+            <h3>Share with Friends</h3>
+            <p>Found a sound effect that's too good not to share? Use our copy-link feature to easily share specific
+                sound buttons with friends, family, or followers across any platform.</p>
+
+            <h3>Mobile-Friendly Design</h3>
+            <p>Our responsive design ensures you can access and enjoy all our sound effects on any device, whether
+                you're on a desktop, tablet, or smartphone.</p>
+        </section>
+
+        <section id="sound-categories" class="info-section">
+            <h2>Explore Our Sound Effect Categories</h2>
+            <h3>From Memes to Movie Quotes and Beyond</h3>
+            <p>Discover a vast array of sound effects across multiple categories including viral memes, movie quotes,
+                game sounds, celebrity clips, and much more.</p>
+
+            <h3>Viral Meme Sounds</h3>
+            <p>Our collection features all the most popular meme sounds that have taken the internet by storm, from
+                classic vine references to the latest TikTok trends.</p>
+
+            <h3>Gaming Audio Clips</h3>
+            <p>Explore sounds from popular video games, including character quotes, effect sounds, and memorable moments
+                that gamers will instantly recognize.</p>
+
+            <h3>TV and Movie Soundbites</h3>
+            <p>Relive iconic moments from your favorite films and television shows with our curated selection of
+                memorable quotes and sound effects from pop culture.</p>
+
+            <h3>Soundboard Collections</h3>
+            <p>Browse our themed soundboard collections that group related sound effects together, making it easy to
+                find multiple variations of similar sounds or clips from the same source.</p>
+        </section>
+        <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+            <a href="/"><button>view more buttons</button></a>
+        </div>
+        </section>
+
+
     </main>
 
     <footer>
@@ -75,17 +347,18 @@
 
     <script src="script.js"></script>
 
-                <div style="display: none;">
-                <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MM1SEN6C89"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <div style="display: none;">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM1SEN6C89"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-  gtag('config', 'G-MM1SEN6C89');
-</script>
-                </div>
+            gtag('config', 'G-MM1SEN6C89');
+        </script>
+    </div>
 
 </body>
+
 </html>
